@@ -176,11 +176,22 @@ circle3.run(waitAndThenRepeatedlyFadeOutAndIn)
  */
 
 // Exercise 1: Write your code below.
-let TwentySecondWait = SKAction.wait(forDuration: 20.0)
-let rightThisMuch = CGVector(dx: 0, dy: 250)
-let ActionRight = SKAction.move(by: rightThisMuch, duration: 5)
 
+// defines a node to wait
+let TwentySecondWait = SKAction.wait(forDuration: 20.0)
+
+// defines a vector for a motion right
+let rightThisMuch = CGVector(dx: 0, dy: 250)
+
+// defines an action that causes a node to move for half a second
+let ActionRight = SKAction.move(by: rightThisMuch, duration: 0.5)
+
+// defines a sequence
 let actionWaitThenRight = SKAction.sequence([TwentySecondWait, ActionRight])
+
+// runs it???
+circle1.run(actionWaitThenRight)
+
 // Exercise 2: Write your code below.
 
 
