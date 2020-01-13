@@ -110,7 +110,7 @@ let actionUpwardsMovement = SKAction.move(by: upThisMuch, duration: 0.5)
  */
 
 // 1. Make the first circle move up immediately (runs a single action, once)
-circle1.run(actionUpwardsMovement)
+//circle1.run(actionUpwardsMovement)
 
 // Define a sequence that involves a:
 // * five second wait
@@ -118,7 +118,7 @@ circle1.run(actionUpwardsMovement)
 let actionShortWaitThenMoveUp = SKAction.sequence([actionFiveSecondWait, actionUpwardsMovement])
 
 // 2. Make the second circle wait for five seconds, then move up
-circle2.run(actionShortWaitThenMoveUp)
+//circle2.run(actionShortWaitThenMoveUp)
 
 // Define a sequence that involves a:
 // * five second wait
@@ -127,11 +127,11 @@ circle2.run(actionShortWaitThenMoveUp)
 let actionLongerWaitThenMoveUp = SKAction.sequence([actionFiveSecondWait, actionFiveSecondWait, actionUpwardsMovement])
 
 // 3. Make the third circle wait for 10 seconds, then move up
-circle3.run(actionLongerWaitThenMoveUp)
+//circle3.run(actionLongerWaitThenMoveUp)
 
 // 4. Make the fourth circle move up every five seconds
 let actionRepeatWaitThenJump = SKAction.repeatForever(actionShortWaitThenMoveUp)
-circle4.run(actionRepeatWaitThenJump)
+//circle4.run(actionRepeatWaitThenJump)
 
 // 5. Make the third circle wait for 15 seconds, then both fade in and out, and then both expand and contract in size
 
@@ -155,7 +155,7 @@ let repeatFadeOutThenIn = SKAction.repeatForever(actionFadeOutThenIn)
 let waitAndThenRepeatedlyFadeOutAndIn = SKAction.sequence([actionFiveSecondWait, actionFiveSecondWait, actionFiveSecondWait, repeatFadeOutThenIn])
 
 // Now run the sequence on the third circle
-circle3.run(waitAndThenRepeatedlyFadeOutAndIn)
+//circle3.run(waitAndThenRepeatedlyFadeOutAndIn)
 
 
 /*:
@@ -178,10 +178,10 @@ circle3.run(waitAndThenRepeatedlyFadeOutAndIn)
 // Exercise 1: Write your code below.
 
 // defines a node to wait
-let TwentySecondWait = SKAction.wait(forDuration: 20.0)
+let TwentySecondWait = SKAction.wait(forDuration: 2.0)
 
 // defines a vector for a motion right
-let rightThisMuch = CGVector(dx: 0, dy: 250)
+let rightThisMuch = CGVector(dx: 250, dy: 0)
 
 // defines an action that causes a node to move for half a second
 let ActionRight = SKAction.move(by: rightThisMuch, duration: 0.5)
