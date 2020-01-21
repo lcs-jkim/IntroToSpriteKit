@@ -102,7 +102,31 @@ letter.fontColor = .white
 letter.text = "y"
 letter.position = CGPoint(x: 450, y: scene.size.height - 280)
 
+scene.addChild(Y)
 
+let E = SKLabelNode(fontNamed: "Rockwell")
+letter.fontSize = 45
+letter.fontColor = .white
+letter.text = "E"
+letter.position = CGPoint(x: 500, y: scene.size.height - 280)
+
+scene.addChild(E)
+
+let E2 = SKLabelNode(fontNamed: "Rockwell")
+letter.fontSize = 45
+letter.fontColor = .white
+letter.text = "E"
+letter.position = CGPoint(x: 550, y: scene.size.height - 280)
+
+scene.addChild(E2)
+
+let T = SKLabelNode(fontNamed: "Rockwell")
+letter.fontSize = 45
+letter.fontColor = .white
+letter.text = "E"
+letter.position = CGPoint(x: 600, y: scene.size.height - 280)
+
+scene.addChild(T)
 /*:
 
  [Previous: Adding Nodes Repeatedly](@previous) | Page 7 | [Next: Animating a Sprite](@next)
